@@ -11,3 +11,11 @@ namespace theblog.Models
         public string TopicKeywords { get; set; }
     }
 }
+
+public partial class ArticleCountByTopic
+{
+    public int TopicId { get; set; }
+    public string MainTopicName { get; set; }
+    public string SubTopicName { get; set; }
+    public int ArticleCount { get; set; }
+}

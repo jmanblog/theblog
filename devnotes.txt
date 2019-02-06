@@ -1,0 +1,2 @@
+Adding database controllers with NuGet Package Manager:
+Scaffold-DbContext "Server=localhost\SQLEXPRESS; Database=Jmanblog; Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
