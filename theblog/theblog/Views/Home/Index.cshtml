@@ -6,19 +6,41 @@
     <h1 class="display-4">Hello Master</h1>
     <p>I am your Jmanblog API.</p>
     <p>Here you can learn some of my capabilities.</p>
-    <table border="1" cellpadding="10">
-        <tr>
-            <th>Route</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td><a href="api/article/TestArticle">api/article/ArticleShort</a></td>
-            <td>Retrieve content of specific article based on the shortname of the article in jmanblog-database.</td>
-        </tr>
-        <tr>
-            <td><a href="api/topics">api/topics</a></td>
-            <td>List all article topics in jmanblog-database table "Topics".</td>
-        </tr>
+    <div class="main-centered">
+        <table class="main-table">
+            <tr>
+                <th>Route</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><a href="api">api</a></td>
+                <td>Get all articles in articles table.</td>
+            </tr>
+            <tr>
+                <td><a href="api/topics">api/topics</a></td>
+                <td>List all article topics in jmanblog-database table "Topics".</td>
+            </tr>
+            <tr>
+                <td><a href="api/main/Development">api/main/MainTopicName</a></td>
+                <td>List all articles under given main topic.</td>
+            </tr>
+            <tr>
+                <td><a href="api/main/Blogging">api/sub/SubTopicName</a></td>
+                <td>List all articles under given subtopic. Note: subtopic is a unique identifier in topics table.</td>
+            </tr>
+            <tr>
+                <td><a href="api/article/1">api/article/ArticleId</a></td>
+                <td>Retrieve content of specific article based on the unique id (int) of the article in articles table.</td>
+            </tr>
+            <tr>
+                <td><a href="api/article/TestArticle">api/article/ArticleShort</a></td>
+                <td>Retrieve content of specific article based on the shortname (string) of the article in articles table.</td>
+            </tr>
+            <tr>
+                <td><a href="api/article/topic/1">api/article/topic/topicId</a></td>
+                <td>List all articles from articles table with a specific topicId (int).</td>
+            </tr>
 
-    </table>
+        </table>
+    </div>
 </div>
